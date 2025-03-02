@@ -5,6 +5,7 @@
 
 ## What's included
 - [LangChain](langchain/langchain.md)
+- [Qwen](qwen/qwen.md)
 
 ## Runtime Environment
 - [Python 3.7.x](https://www.python.org/downloads/)
