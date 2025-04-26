@@ -6,6 +6,7 @@
 ## What's included
 - [Databases](databases/databases.md)
 - [LangChain](langchain/langchain.md)
+- [MCP](mcp/mcp.md)
 - [Qwen](qwen/qwen.md)
 - [Ollama](ollama/ollama.md)
 
