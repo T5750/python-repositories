@@ -32,3 +32,4 @@ pip install cx_Oracle
 - [python-oracledb GitHub](https://github.com/oracle/python-oracledb)
 - [Python and Oracle Database Tutorial](https://oracle.github.io/python-oracledb/samples/tutorial/Python-and-Oracle-Database-The-New-Wave-of-Scripting.html)
 - [Python cx_Oracle](https://oracle.github.io/python-cx_Oracle/)
+- [Weaviate Python](https://weaviate.io/developers/weaviate/client-libraries/python)
