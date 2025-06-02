@@ -39,7 +39,7 @@ mcp = FastApiMCP(
     # 可选参数
     name="我的 API MCP",
     description="我的 API 描述",
-    base_url="http://127.0.0.1:8000",
+    # base_url="http://127.0.0.1:8000",
     describe_all_responses=True,  # 在工具描述中包含所有可能的响应模式
     describe_full_response_schema=True  # 在工具描述中包含完整的 JSON 模式
 )

@@ -27,6 +27,12 @@ cx_Oracle was obsoleted by python-oracledb in 2022.
 pip install cx_Oracle
 ```
 
+## Weaviate
+### Installation
+```sh
+pip install -U weaviate-client
+```
+
 ## References
 - [Python python-oracledb Driver](https://oracle.github.io/python-oracledb/)
 - [python-oracledb GitHub](https://github.com/oracle/python-oracledb)
