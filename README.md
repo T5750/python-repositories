@@ -7,12 +7,14 @@
 - [Databases](databases/databases.md)
 - [LangChain](langchain/langchain.md)
 - [MCP](mcp/mcp.md)
-- [Qwen](qwen/qwen.md)
 - [Ollama](ollama/ollama.md)
+- [Qwen](qwen/qwen.md)
+- [Test](test/README.md)
 
 ## Runtime Environment
 - [Python 3.9.x](https://www.python.org/downloads/)
 - [Python 3.10.x](https://www.python.org/downloads/)
+- [Python 3.12.x](https://www.python.org/downloads/)
 
 ## License
 Python Repositories is Open Source software released under the [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
