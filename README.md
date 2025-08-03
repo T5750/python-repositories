@@ -5,6 +5,7 @@
 
 ## What's included
 - [Databases](databases/databases.md)
+- [IoT](iot/iot.md)
 - [LangChain](langchain/langchain.md)
 - [MCP](mcp/mcp.md)
 - [Ollama](ollama/ollama.md)
