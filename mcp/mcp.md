@@ -48,7 +48,7 @@ pip install fastmcp
 ### Examples
 [examples](https://github.com/jlowin/fastmcp/tree/main/examples)
 
-## Runtime Environment
+## References
 - [MCP 简介](https://mcp-docs.cn/introduction)
 - [FastAPI](https://fastapi.tiangolo.com/zh/)
 - [FastAPI GitHub](https://github.com/fastapi/fastapi)
