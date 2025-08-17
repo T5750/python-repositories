@@ -3,6 +3,16 @@
 ## OPC-UA
 OPC统一架构（UA）将各个OPC Classic规范的所有功能集成到一个可扩展的框架中，独立于平台并且面向服务
 
+### opcua-asyncio
+opcua-asyncio is an asyncio-based asynchronous OPC UA client and server based on python-opcua, removing support of python < 3.8
+- [asyncua-server-minimal.py](asyncua-server-minimal.py)
+- [asyncua-client-minimal.py](asyncua-client-minimal.py)
+
+#### Installation
+```sh
+pip install asyncua
+```
+
 ### Python OPC-UA
 Python OPC UA is deprecated
 - [opcua-server-minimal.py](opcua-server-minimal.py)
@@ -41,11 +51,15 @@ pip install -U pymodbus
 ```
 
 ## Runtime Environment
+- [asyncua 1.1.x](https://pypi.org/project/asyncua/)
 - [opcua 0.98.x](https://pypi.org/project/opcua/)
 - [pymodbus 3.10.x](https://pypi.org/project/pymodbus/)
 
 ## References
 - [OPC统一架构](https://www.opcfoundation.cn/about/opc-technologies/opc-ua)
+- [opcua-asyncio GitHub](https://github.com/FreeOpcUa/opcua-asyncio)
+- [opcua-asyncio Documentation](https://opcua-asyncio.readthedocs.io/en/latest/)
+- [opcua-asyncio Examples](https://github.com/FreeOpcUa/opcua-asyncio/tree/master/examples)
 - [Python OPC-UA GitHub](https://github.com/FreeOpcUa/python-opcua)
 - [Python OPC-UA Documentation](https://python-opcua.readthedocs.io/en/latest/index.html)
 - [Python OPC-UA Examples](https://github.com/FreeOpcUa/python-opcua/tree/master/examples)
