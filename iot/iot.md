@@ -1,5 +1,18 @@
 # IoT
 
+## OPC-UA
+OPC统一架构（UA）将各个OPC Classic规范的所有功能集成到一个可扩展的框架中，独立于平台并且面向服务
+
+### Python OPC-UA
+Python OPC UA is deprecated
+- [opcua-server-minimal.py](opcua-server-minimal.py)
+- [opcua-client-minimal.py](opcua-client-minimal.py)
+
+#### Installation
+```sh
+pip install opcua
+```
+
 ## Pymodbus
 Pymodbus is a full Modbus protocol implementation offering a client and server with synchronous/asynchronous API and simulators.
 
@@ -28,9 +41,15 @@ pip install -U pymodbus
 ```
 
 ## Runtime Environment
+- [opcua 0.98.x](https://pypi.org/project/opcua/)
 - [pymodbus 3.10.x](https://pypi.org/project/pymodbus/)
 
 ## References
+- [OPC统一架构](https://www.opcfoundation.cn/about/opc-technologies/opc-ua)
+- [Python OPC-UA GitHub](https://github.com/FreeOpcUa/python-opcua)
+- [Python OPC-UA Documentation](https://python-opcua.readthedocs.io/en/latest/index.html)
+- [Python OPC-UA Examples](https://github.com/FreeOpcUa/python-opcua/tree/master/examples)
+- [OPC-UA GUI Client](https://github.com/FreeOpcUa/opcua-client-gui)
 - [Pymodbus GitHub](https://github.com/pymodbus-dev/pymodbus)
 - [Pymodbus Client](https://pymodbus.readthedocs.io/en/latest/source/client.html)
 - [Pymodbus Examples](https://pymodbus.readthedocs.io/en/latest/source/examples.html)
