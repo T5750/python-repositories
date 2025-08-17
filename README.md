@@ -4,13 +4,13 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/T5750/python-repositories/pulls)
 
 ## What's included
-- [Databases](databases/databases.md)
-- [IoT](iot/iot.md)
-- [LangChain](langchain/langchain.md)
-- [MCP](mcp/mcp.md)
-- [Ollama](ollama/ollama.md)
-- [Qwen](qwen/qwen.md)
-- [Test](test/README.md)
+- [Databases](databases/README)
+- [IoT](iot/README)
+- [LangChain](langchain/README)
+- [MCP](mcp/README)
+- [Ollama](ollama/README)
+- [Qwen](qwen/README)
+- [Test](test/README)
 
 ## Runtime Environment
 - [Python 3.9.x](https://www.python.org/downloads/)
