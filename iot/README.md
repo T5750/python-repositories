@@ -50,10 +50,22 @@ Pymodbus is a full Modbus protocol implementation offering a client and server w
 pip install -U pymodbus
 ```
 
+## MQTT
+The MQTT protocol is a machine-to-machine (M2M)/”Internet of Things” connectivity protocol. Designed as an extremely lightweight publish/subscribe messaging transport, it is useful for connections with remote locations where a small code footprint is required and/or network bandwidth is at a premium.
+
+### Contents
+- [mqtt_client.py](mqtt_client.py)
+
+### Installation
+```sh
+pip install paho-mqtt
+```
+
 ## Runtime Environment
 - [asyncua 1.1.x](https://pypi.org/project/asyncua/)
 - [opcua 0.98.x](https://pypi.org/project/opcua/)
 - [pymodbus 3.10.x](https://pypi.org/project/pymodbus/)
+- [paho-mqtt 2.1.x](https://pypi.org/project/paho-mqtt/)
 
 ## References
 - [OPC统一架构](https://www.opcfoundation.cn/about/opc-technologies/opc-ua)
@@ -68,3 +80,7 @@ pip install -U pymodbus
 - [Pymodbus Client](https://pymodbus.readthedocs.io/en/latest/source/client.html)
 - [Pymodbus Examples](https://pymodbus.readthedocs.io/en/latest/source/examples.html)
 - [Pymodbus Architecture](https://pymodbus.readthedocs.io/en/latest/source/library/architecture/architecture.html)
+- [Eclipse Paho](https://eclipse.dev/paho/)
+- [Eclipse Paho Python GitHub](https://github.com/eclipse-paho/paho.mqtt.python)
+- [Eclipse Paho Python Documentation](https://eclipse.dev/paho/files/paho.mqtt.python/html/index.html)
+- [Eclipse Paho Python Examples](https://github.com/eclipse-paho/paho.mqtt.python/tree/master/examples)
