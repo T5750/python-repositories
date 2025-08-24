@@ -50,6 +50,18 @@ Pymodbus is a full Modbus protocol implementation offering a client and server w
 pip install -U pymodbus
 ```
 
+## CAN
+The Controller Area Network(CAN) is a bus standard designed to allow microcontrollers and devices to communicate with each other. It has priority based bus arbitration and reliable deterministic communication. It is used in cars, trucks, boats, wheelchairs and more.
+
+### Contents
+- [can_client.py](can_client.py)
+
+### Installation
+Install [Kvaser’s latest Windows CANLib drivers](https://www.kvaser.com/download/).
+```sh
+pip install python-can
+```
+
 ## MQTT
 The MQTT protocol is a machine-to-machine (M2M)/”Internet of Things” connectivity protocol. Designed as an extremely lightweight publish/subscribe messaging transport, it is useful for connections with remote locations where a small code footprint is required and/or network bandwidth is at a premium.
 
@@ -65,6 +77,7 @@ pip install paho-mqtt
 - [asyncua 1.1.x](https://pypi.org/project/asyncua/)
 - [opcua 0.98.x](https://pypi.org/project/opcua/)
 - [pymodbus 3.10.x](https://pypi.org/project/pymodbus/)
+- [python-can 4.6.x](https://pypi.org/project/python-can/)
 - [paho-mqtt 2.1.x](https://pypi.org/project/paho-mqtt/)
 
 ## References
@@ -80,6 +93,10 @@ pip install paho-mqtt
 - [Pymodbus Client](https://pymodbus.readthedocs.io/en/latest/source/client.html)
 - [Pymodbus Examples](https://pymodbus.readthedocs.io/en/latest/source/examples.html)
 - [Pymodbus Architecture](https://pymodbus.readthedocs.io/en/latest/source/library/architecture/architecture.html)
+- [python-can GitHub](https://github.com/hardbyte/python-can)
+- [python-can Documentation](https://python-can.readthedocs.io/)
+- [python-can Installation](https://python-can.readthedocs.io/en/stable/installation.html)
+- [python-can Examples](https://github.com/hardbyte/python-can/tree/main/examples)
 - [Eclipse Paho](https://eclipse.dev/paho/)
 - [Eclipse Paho Python GitHub](https://github.com/eclipse-paho/paho.mqtt.python)
 - [Eclipse Paho Python Documentation](https://eclipse.dev/paho/files/paho.mqtt.python/html/index.html)
