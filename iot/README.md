@@ -1,28 +1,5 @@
 # IoT
 
-## OPC-UA
-OPC统一架构（UA）将各个OPC Classic规范的所有功能集成到一个可扩展的框架中，独立于平台并且面向服务
-
-### opcua-asyncio
-opcua-asyncio is an asyncio-based asynchronous OPC UA client and server based on python-opcua, removing support of python < 3.8
-- [asyncua-server-minimal.py](asyncua-server-minimal.py)
-- [asyncua-client-minimal.py](asyncua-client-minimal.py)
-
-#### Installation
-```sh
-pip install asyncua
-```
-
-### Python OPC-UA
-Python OPC UA is deprecated
-- [opcua-server-minimal.py](opcua-server-minimal.py)
-- [opcua-client-minimal.py](opcua-client-minimal.py)
-
-#### Installation
-```sh
-pip install opcua
-```
-
 ## Pymodbus
 Pymodbus is a full Modbus protocol implementation offering a client and server with synchronous/asynchronous API and simulators.
 
@@ -50,6 +27,29 @@ Pymodbus is a full Modbus protocol implementation offering a client and server w
 pip install -U pymodbus
 ```
 
+## OPC-UA
+OPC统一架构（UA）将各个OPC Classic规范的所有功能集成到一个可扩展的框架中，独立于平台并且面向服务
+
+### opcua-asyncio
+opcua-asyncio is an asyncio-based asynchronous OPC UA client and server based on python-opcua, removing support of python < 3.8
+- [asyncua-server-minimal.py](asyncua-server-minimal.py)
+- [asyncua-client-minimal.py](asyncua-client-minimal.py)
+
+#### Installation
+```sh
+pip install asyncua
+```
+
+### Python OPC-UA
+Python OPC UA is deprecated
+- [opcua-server-minimal.py](opcua-server-minimal.py)
+- [opcua-client-minimal.py](opcua-client-minimal.py)
+
+#### Installation
+```sh
+pip install opcua
+```
+
 ## CAN
 The Controller Area Network(CAN) is a bus standard designed to allow microcontrollers and devices to communicate with each other. It has priority based bus arbitration and reliable deterministic communication. It is used in cars, trucks, boats, wheelchairs and more.
 
@@ -74,13 +74,17 @@ pip install paho-mqtt
 ```
 
 ## Runtime Environment
+- [pymodbus 3.10.x](https://pypi.org/project/pymodbus/)
 - [asyncua 1.1.x](https://pypi.org/project/asyncua/)
 - [opcua 0.98.x](https://pypi.org/project/opcua/)
-- [pymodbus 3.10.x](https://pypi.org/project/pymodbus/)
 - [python-can 4.6.x](https://pypi.org/project/python-can/)
 - [paho-mqtt 2.1.x](https://pypi.org/project/paho-mqtt/)
 
 ## References
+- [Pymodbus GitHub](https://github.com/pymodbus-dev/pymodbus)
+- [Pymodbus Client](https://pymodbus.readthedocs.io/en/latest/source/client.html)
+- [Pymodbus Examples](https://pymodbus.readthedocs.io/en/latest/source/examples.html)
+- [Pymodbus Architecture](https://pymodbus.readthedocs.io/en/latest/source/library/architecture/architecture.html)
 - [OPC统一架构](https://www.opcfoundation.cn/about/opc-technologies/opc-ua)
 - [opcua-asyncio GitHub](https://github.com/FreeOpcUa/opcua-asyncio)
 - [opcua-asyncio Documentation](https://opcua-asyncio.readthedocs.io/en/latest/)
@@ -89,10 +93,6 @@ pip install paho-mqtt
 - [Python OPC-UA Documentation](https://python-opcua.readthedocs.io/en/latest/index.html)
 - [Python OPC-UA Examples](https://github.com/FreeOpcUa/python-opcua/tree/master/examples)
 - [OPC-UA GUI Client](https://github.com/FreeOpcUa/opcua-client-gui)
-- [Pymodbus GitHub](https://github.com/pymodbus-dev/pymodbus)
-- [Pymodbus Client](https://pymodbus.readthedocs.io/en/latest/source/client.html)
-- [Pymodbus Examples](https://pymodbus.readthedocs.io/en/latest/source/examples.html)
-- [Pymodbus Architecture](https://pymodbus.readthedocs.io/en/latest/source/library/architecture/architecture.html)
 - [python-can GitHub](https://github.com/hardbyte/python-can)
 - [python-can Documentation](https://python-can.readthedocs.io/)
 - [python-can Installation](https://python-can.readthedocs.io/en/stable/installation.html)
