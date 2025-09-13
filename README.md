@@ -9,6 +9,7 @@
 - [LangChain](langchain/README.md)
 - [MCP](mcp/README.md)
 - [Ollama](ollama/README.md)
+- [PaddlePaddle](paddlepaddle/README.md)
 - [Qwen](qwen/README.md)
 - [Test](test/README.md)
 
