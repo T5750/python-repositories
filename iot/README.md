@@ -73,12 +73,28 @@ The MQTT protocol is a machine-to-machine (M2M)/”Internet of Things” connect
 pip install paho-mqtt
 ```
 
+## BACnet
+BACnet (Building Automation and Control Network) is the global data communications standard for building automation and control networks.
+
+### Contents
+```sh
+python bacpypes3-cov-server.py --address 127.0.0.1
+# 不兼容 Windows
+python bacpypes3-cov-client.py 127.0.0.1 analog-value,1
+```
+
+### Installation
+```sh
+pip install bacpypes3
+```
+
 ## Runtime Environment
 - [pymodbus 3.10.x](https://pypi.org/project/pymodbus/)
 - [asyncua 1.1.x](https://pypi.org/project/asyncua/)
 - [opcua 0.98.x](https://pypi.org/project/opcua/)
 - [python-can 4.6.x](https://pypi.org/project/python-can/)
 - [paho-mqtt 2.1.x](https://pypi.org/project/paho-mqtt/)
+- [bacpypes3](https://pypi.org/project/bacpypes3/)
 
 ## References
 - [Pymodbus GitHub](https://github.com/pymodbus-dev/pymodbus)
@@ -101,3 +117,6 @@ pip install paho-mqtt
 - [Eclipse Paho Python GitHub](https://github.com/eclipse-paho/paho.mqtt.python)
 - [Eclipse Paho Python Documentation](https://eclipse.dev/paho/files/paho.mqtt.python/html/index.html)
 - [Eclipse Paho Python Examples](https://github.com/eclipse-paho/paho.mqtt.python/tree/master/examples)
+- [BACpypes3 GitHub](https://github.com/JoelBender/BACpypes3)
+- [BACpypes3 Documentation](https://bacpypes3.readthedocs.io/en/latest/index.html)
+- [BACpypes3 Examples](https://github.com/JoelBender/BACpypes3/tree/main/samples)
