@@ -12,9 +12,20 @@ pip install paddleocr fastapi uvicorn requests pillow
 nohup python paddleocr_server.py >> paddleocr_server.log 2>&1 &
 ```
 
+## PaddleX
+### Contents
+- [paddlex_ocr.py](paddlex_ocr.py)
+
+### Installation
+```sh
+pip install "paddlex[base]"
+```
+
 ## Runtime Environment
 - [PaddlePaddle 3.x](https://pypi.org/project/paddlepaddle/)
 - [PaddleOCR 3.x](https://pypi.org/project/paddleocr/)
+- [PaddleX 3.x](https://pypi.org/project/paddlex/)
 
 ## References
 - [PaddleOCR](https://www.paddleocr.ai/)
+- [PaddleX 文档](https://paddlepaddle.github.io/PaddleX/latest/index.html)
