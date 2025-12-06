@@ -130,3 +130,5 @@ dmypy.json
 
 .idea/
 .idea*.zip
+src/models/
+runs/

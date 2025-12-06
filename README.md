@@ -18,6 +18,7 @@
 - [Python 3.9.x](https://www.python.org/downloads/)
 - [Python 3.10.x](https://www.python.org/downloads/)
 - [Python 3.12.x](https://www.python.org/downloads/)
+- [Poetry 2.x](https://pypi.org/project/poetry/)
 
 ## License
 Python Repositories is Open Source software released under the [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
