@@ -2,10 +2,10 @@ from pathlib import Path
 from typing import List, Dict, Any
 
 import requests
-from fastapi import FastAPI, HTTPException, File, UploadFile
+from fastapi import FastAPI, HTTPException, File, UploadFile, Query
 from fastapi import applications
 from fastapi.openapi.docs import get_swagger_ui_html
-from pydantic import BaseModel
+from pydantic import BaseModel, field_validator
 from ultralytics import YOLO
 
 def swagger_monkey_patch(*args, **kwargs):
@@ -23,6 +23,13 @@ UPLOAD_DIR.mkdir(exist_ok=True)  # 确保目录存在
 
 class ImageRequest(BaseModel):
     image_url: str  # 图片链接
+    conf: float = 0.25  # 置信度阈值，默认0.25
+
+    @field_validator('conf')
+    def validate_conf(cls, v):
+        if not (0.0 <= v <= 1.0):
+            raise ValueError('置信度必须在0.0到1.0之间')
+        return v
 
 # 下载到指定目录
 def download_image(url, save_dir: Path = UPLOAD_DIR):
@@ -72,7 +79,7 @@ def parse_yolo_results(results: Any) -> List[Dict[str, Any]]:
 async def predict(request: ImageRequest):
     try:
         image_path = download_image(request.image_url)
-        results = model(image_path, conf=0.25)
+        results = model(image_path, conf=request.conf)
         detections = parse_yolo_results(results)
         return {
             "status": "success",
@@ -84,10 +91,13 @@ async def predict(request: ImageRequest):
         raise HTTPException(status_code=400, detail=f"预测失败：{str(e)}")
 
 @app.post("/predict_upload")
-async def predict_upload(file: UploadFile = File(...)):
+async def predict_upload(
+        file: UploadFile = File(...),
+        conf: float = Query(0.25, ge=0.0, le=1.0, description="置信度阈值，范围0.0-1.0")
+):
     try:
         image_path = save_upload_file(file)
-        results = model(image_path, conf=0.25)
+        results = model(image_path, conf=conf)
         detections = parse_yolo_results(results)
         return {
             "status": "success",
